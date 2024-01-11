@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Bootstrap file -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Main Css File -->
+  <link rel="stylesheet" href="css/media.css" />
+  <!-- Normalize File -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome File -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mediaSocial</title>
+</head>
+
+<body id="body" class="eee">
+  <!-- Header Design -->
+  <header class="header fff fixed-top">
+    <div class="logo"><a href="#">mediaSocial</a></div>
+    <div class="input">
+      <input onkeyup="search(this.value)" id="search-post" type="text" placeholder="Search by group friends posts"
+        class="eee ml-2 text-primary" />
+    </div>
+    <div class="right">
+      <button class="btn btn-primary button ml-3" id="create">Create</button>
+      <img src="image/8.jpg" alt="" class="rounded-circle" />
+    </div>
+  </header>
+  <div class="main">
+    <!-- left Side Design -->
+    <div class="left-side fff">
+      <div class="logo-side">
+        <div class="image-left">
+          <img src="image/9.jpeg" />
+        </div>
+        <div class="content-left">
+          <h5>Ahmed Abdalrahman</h5>
+          <p>@Xxxan</p>
+        </div>
+      </div>
+      <div class="side-link">
+        <ul class="text-center">
+          <li class="active">
+            <i class="fa fa-home mr-4 text-primary"></i>
+            <a href="#" class="text-primary">Home</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-envelope mr-4 text-primary"></i>
+            <a href="#" class="text-primary">Notification</a>
+          </li>
+          <li id="message">
+            <i class="fa-regular fa-message mr-4 text-primary"></i><a href="#" class="text-primary">Message</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-bookmark mr-4 text-primary"></i>
+            <a href="#" class="text-primary">Bookmarks</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-chart-simple mr-4 text-primary"></i>
+            <a href="#" class="text-primary">Anatlyrics</a>
+          </li>
+          <li id="themes">
+            <i class="fa-solid fa-palette mr-4 text-primary"></i>
+            <a href="#" class="text-primary">Theme</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-gear mr-4 text-primary"></i>
+            <a href="#" class="text-primary">Setting</a>
+          </li>
+          <div class="create-post">
+            <button class="btn btn-primary p-3 w-100 button">
+              Creatre Post
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- Center Section Design -->
+    <div class="center-side">
+      <div class="pop"></div>
+      <div class="model-setting fff">
+        <h3>Customize Your View</h3>
+        <p>manage your fintsize color and background</p>
+        <div class="color-change">
+          <div class="butt blue" data-color="#6608d3"></div>
+          <div class="butt yellow" data-color="#e2e60c"></div>
+          <div class="butt red" data-color="#da0d2f"></div>
+          <div class="butt green" data-color="#58e407"></div>
+          <div class="butt bl" data-color="#0781e4"></div>
+        </div>
+        <div class="back eee">
+          <div class="light" data-back="#fff" data-body="#eeeded" data-text="#000">
+            <p>
+              light <br />
+              Mood
+            </p>
+          </div>
+          <div class="dark" data-back="#343a40" data-body="#2b2b2b" data-text="#fff">
+            <p>
+              Dark <br />
+              Mood
+            </p>
+          </div>
+          <div class="math" data-back="#220b3a" data-body="#1c1222" data-text="#fff">
+            Math <br />
+            Mood
+          </div>
+        </div>
+      </div>
+      <div class="container-center">
+        <div class="image-center">
+          <div class="image-box w-100">
+            <div class="image-1 w-25">
+              <img src="image/1.jpeg" alt="" class="w-100" />
+              <div class="image-log">
+                <img src="image/1.jpeg" alt="" class="rounded-circle" />
+              </div>
+            </div>
+            <div class="image-1">
+              <img src="image/2.jpeg" alt="" class="w-100" />
+              <div class="image-log">
+                <img src="image/2.jpeg" alt="" class="rounded-circle" />
+              </div>
+            </div>
+            <div class="image-1">
+              <img src="image/3.jpeg" alt="" class="w-100" />
+              <div class="image-log">
+                <img src="image/3.jpeg" alt="" class="rounded-circle" />
+              </div>
+            </div>
+            <div class="image-1">
+              <img src="image/4.jpeg" alt="" class="w-100" />
+              <div class="image-log">
+                <img src="image/4.jpeg" alt="" class="rounded-circle" />
+              </div>
+            </div>
+            <div class="image-1">
+              <img src="image/5.png" alt="" class="w-100" />
+              <div class="image-log">
+                <img src="image/5.png" alt="" class="rounded-circle" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post w-100">
+          <input type="text" class="fff text-primary" name="post" id="post" placeholder="Whats on your mind??" />
+          <input type="file" id="file" class="fff mt-2 text-dark" />
+        </div>
+        <div class="container-posts w-100 h-100"></div>
+        <div class="container-videos"></div>
+      </div>
+    </div>
+    <!-- Right Section Design -->
+    <div class="right-side">
+      <div class="message fff">
+        <div class="head">
+          <h3>Message</h3>
+        </div>
+        <div class="search-message">
+          <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search Message"
+            class="eee text-primary" />
+        </div>
+        <div class="head-message">
+          <span class="bottom">Primary</span>
+          <span>General</span>
+          <span>Reguest</span>
+        </div>
+        <div class="friend-container"></div>
+      </div>
+
+      <div class="reguest fff">
+        <h3>Reguest</h3>
+        <div class="information-reguest w-100">
+          <img src="image/1.jpeg" class="mr-0" />
+          <div class="page">
+            <h3>Hithem Abdo</h3>
+            <p>10 mutual friends</p>
+            <div class="button-reguest">
+              <button class="btn btn-primary button">Accept</button>
+              <button class="btn btn-primary button">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="information-reguest w-100">
+          <img src="image/3.jpeg" class="mr-0" />
+          <div class="page">
+            <h3>Hithem Abdo</h3>
+            <p>10 mutual friends</p>
+            <div class="button-reguest">
+              <button class="btn btn-primary button">Accept</button>
+              <button class="btn btn-primary button">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="information-reguest w-100">
+          <img src="image/10.jpeg" class="mr-0" />
+          <div class="page text-center">
+            <h3>Hithem Abdo</h3>
+            <p>10 mutual friends</p>
+            <div class="button-reguest">
+              <button class="btn btn-primary button">Accept</button>
+              <button class="btn btn-primary button">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
